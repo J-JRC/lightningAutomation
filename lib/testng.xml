@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="1" preserve-order="true" verbose="1">
+	<parameter name="APPLICATION_SERVER" value="https://www.facebook.com/" />
+	
+	<parameter name="API_SERVER" value="http://localhost:4200/api/noauth" />
+	<parameter name="API_SERVER_TEST_1" value="http://localhost:4200/api/noauth" />
+	<parameter name="API_SERVER_TEST_2" value="http://localhost:4200/api/noauth" />
+
+	<parameter name="browser" value="chrome" />
+	
+	
+    <listeners>
+  		<listener class-name="com.reporting.console.TestConsoleResultListener"/>
+  		<listener class-name="com.reporting.extent.TestExtentResultListener"/>
+  		<listener class-name="com.reporting.ureport.TestUReportResultListener"/>
+	</listeners>
+  	   
+  <test name="1" preserve-order="true">
+    <groups>
+      <run>
+        <include name="Example"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="tests.TestExample2"/>
+    </classes>
+  </test>
+</suite>
