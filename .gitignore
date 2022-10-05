@@ -24,3 +24,9 @@ hs_err_pid*
 replay_pid*
 lib/test-output/
 lib/reports/
+lib/.classpath
+lib/.project
+.project
+.classpath
+lib/.settings
+.settings/
